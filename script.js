@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       dateElement.classList.add('date');
 
       // Check if an image should be displayed on this date (modify the condition as needed)
-      const shouldDisplayImage = day === 1 || day === 15 || day === 30;
+      const shouldDisplayImage = day === 2 || day === 15 || day === 5|| day === 21|| day === 25|| day === 20;
 
       if (shouldDisplayImage) {
         const image = document.createElement('img');
