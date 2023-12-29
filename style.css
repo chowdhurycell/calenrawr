@@ -1,0 +1,44 @@
+/* style.css */
+body {
+  background-color: #ffc0cb; /* Pink background */
+  color: black; /* Black text color */
+  font-family: 'Times New Roman', serif; /* Use Times New Roman font */
+}
+
+#calendar {
+  display: grid;
+  gap: 10px;
+}
+
+.month {
+  text-align: center;
+  border: 2px solid gold; /* Add a border around the entire month */
+  border-radius: 15px; /* Round-edged border */
+  padding: 10px; /* Add some padding inside the border */
+  margin: 10px; /* Add some margin between months */
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for the days of the week */
+  gap: 5px;
+}
+
+.date {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: gold; /* Golden background for each date */
+  border-radius: 10px; /* Round-edged border for each date */
+}
+
+.date img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
